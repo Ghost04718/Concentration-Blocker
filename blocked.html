@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Blocked</title>
+  <style>
+    :root {
+      --gray-50: #f9fafb;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+      --radius: 6px;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+    }
+
+    .message {
+      text-align: center;
+      background: white;
+      padding: 32px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      margin: 0 0 16px 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 8px 0;
+      color: var(--gray-600);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .category-label {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 12px;
+      background: var(--gray-50);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--gray-700);
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>Website Blocked</h1>
+    <p>This website has been blocked to help you stay focused.</p>
+    <p>To unblock it, click the extension icon and remove it from your blocked list.</p>
+    <div class="category-label" id="category">Loading...</div>
+  </div>
+  <script src="blocked.js"></script>
+</body>
+</html>
